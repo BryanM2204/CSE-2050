@@ -68,4 +68,4 @@ if __name__ == '__main__':
                      }
 
     actual_count = letter_count(file_name) 
-    assert(expected_count == actual_count)       
+    assert(expected_count == actual_count) 
