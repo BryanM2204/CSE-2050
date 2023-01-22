@@ -23,3 +23,8 @@ file = input()
 letter, freq = highest_freq(file)
 
 print(letter, freq)
+
+expected_highest = 't', 0.2727272727272727
+
+if file == 'test.txt':
+    assert(expected_highest == highest_freq(file))

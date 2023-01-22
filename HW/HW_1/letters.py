@@ -57,8 +57,8 @@ def letter_frequency(dict_letters):
 if __name__ == '__main__':
     
     file_name = input()
-    # letter_frequency(letter_count(file_name))
 
+    #These are the letter counts of a test file labeled test.txt
     expected_count = {'a':1,
                       'e':1,
                       'h':1,
@@ -67,5 +67,22 @@ if __name__ == '__main__':
                       't':3
                      }
 
-    actual_count = letter_count(file_name) 
-    assert(expected_count == actual_count) 
+    #These are the frequencies of a test using a file labeled test.txt
+    expected_freq = {'a':0.09090909090909091,
+                     'e':0.09090909090909091,
+                     'h':0.09090909090909091,
+                     'i':0.18181818181818182,
+                     's':0.2727272727272727,
+                     't':0.2727272727272727
+                    }
+
+    #These two lines of code are calling upon the functions to find the letter count and frequency for the test
+    actual_count = letter_count(file_name)
+    actual_freq = letter_frequency(actual_count)
+
+    #These are the assert tests using the expected counts and frequencies with the actual counts / frequencies using test.txt
+    if file_name == 'test.txt':
+        assert(expected_count == actual_count) 
+        assert(expected_freq == actual_freq)
+
+    
