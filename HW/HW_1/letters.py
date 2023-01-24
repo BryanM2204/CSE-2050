@@ -25,7 +25,7 @@ def letter_count(file):
             #Adds +1 to existing key
             if letter in occurrences and letter in string.ascii_lowercase:
                 occurrences[letter] += 1
-            
+                
             #Checks to see if letter is not in dictionary but it is a lowercase letter
             #Creates a new key with the value of 1
             elif letter not in occurrences and letter in string.ascii_lowercase:
@@ -48,14 +48,15 @@ def letter_frequency(dict_letters):
     #for each value of a key, the value is divided by the total number of letters to find the frequency
     for k, v in dict_letters.items():
         frequency = v / num_occurrences
-
         #A new dictionary is created with the key and frequency being added
         frequency_dict[k] = frequency
     
     return frequency_dict
         
+        
 if __name__ == '__main__':
     
+    #Take file name from user input
     file_name = input()
 
     #These are the letter counts of a test file labeled test.txt

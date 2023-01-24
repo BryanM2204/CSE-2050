@@ -17,6 +17,8 @@ def highest_freq(file):
         if v == highest_freq:
             return k, v
 
+
+#Take file name from user input
 file = input()
 
 #assigns the returned values key and value from the function to the variables letter and freq respectively
