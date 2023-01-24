@@ -24,7 +24,9 @@ letter, freq = highest_freq(file)
 
 print(letter, freq)
 
+#Made a test using test.txt knowing that t is the highest frequency letter used
 expected_highest = 't', 0.2727272727272727
 
+#Passes assert test only if the file being used is the test.txt, allowing for use of other files without rising an AssertionError
 if file == 'test.txt':
     assert(expected_highest == highest_freq(file))

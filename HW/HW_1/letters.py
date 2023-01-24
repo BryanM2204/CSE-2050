@@ -51,7 +51,7 @@ def letter_frequency(dict_letters):
 
         #A new dictionary is created with the key and frequency being added
         frequency_dict[k] = frequency
-   
+    
     return frequency_dict
         
 if __name__ == '__main__':
@@ -80,6 +80,9 @@ if __name__ == '__main__':
     actual_count = letter_count(file_name)
     actual_freq = letter_frequency(actual_count)
 
+    print(actual_count)
+    print(actual_freq)
+    
     #These are the assert tests using the expected counts and frequencies with the actual counts / frequencies using test.txt
     if file_name == 'test.txt':
         assert(expected_count == actual_count) 
