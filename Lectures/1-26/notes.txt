@@ -1,0 +1,13 @@
+Test Driven Development 
+    Red phase:
+    1. Write a Test
+    2. Run it to verify 
+        -failure - you want it to fail
+        -Verify that it fails for the reason you expect
+            - There could be a name error or you didn't save your file 
+
+    Green phase:
+    3. Modify code till we pass
+
+    Blue(refactor) phase:
+    4. Refactor redundant code
