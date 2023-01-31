@@ -1,0 +1,16 @@
+ Lazy update - you dont rewrite the list as it changes
+    -efficiency vs memory
+    -Give buffer for efficiency - twice the memory is allocated
+
+Atomic Operations on Lists
+-smallest possible operation that can't be divided into other Operations
+-Examples
+    -L.append(item)
+    -L.pop()
+    -L[23]
+    -L[23] = 4
+
+Big-O notations
+-get rid of constants & low order terms
+-consider only drastic improvements
+    
