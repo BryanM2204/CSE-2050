@@ -1,0 +1,22 @@
+Big - O
+    f(n) = O(g(n)) if there exist
+    "f(n) is big-O g(n)
+
+    some constants c + n(0) 
+    f(n) <= cg(n), n > n(0)
+
+f(n) = actual running time
+f(n) = 2n^2 + 1.3n + 2
+
+f(n) = O(n^2)
+
+let c = 3
+2n(0)^2 + 1.3n(0) + 2 = 3
+
+f(n) = 2n + 1 = O(n)
+    -2n + 1 <= cn, n> n(0)
+
+    c = 4
+
+    2n + 1 = 4n
+    n = 1/2
