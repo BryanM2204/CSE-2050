@@ -26,7 +26,7 @@ def time_function_flexible(func, args, n_trials=10):
         end = time.time()
         
         minimum = (end-start) if (end-start) < minimum else minimum
-
+ 
     return minimum
 
 if __name__ == '__main__':
