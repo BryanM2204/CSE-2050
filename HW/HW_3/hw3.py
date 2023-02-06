@@ -18,14 +18,14 @@ def find_pairs_naive(lst, target):
 def find_pairs_optimized(lst, target):
     """An optimized version of find_pairs_naive that returns a set of tuples of numbers that add up to the target number"""
 
-    num_set = set()                         #1
-    for i in lst:                           #n (use of a single for loop that iterates through the list)
-        if target - i in lst:               #1 (subtracts i from target to find other number that adds up to target)
-            num_set.add((i, (target - i)))  #1 (adds tuple to set)
-            lst.remove(i)                   #1 (removes i from list to prevent duplicates)
-    return num_set                          #1
-                                            #-----------------
-                                            # n + 2 = O(n)
+    num_set = set()                                           #1
+    for i in lst:                                             #n (use of a single for loop that iterates through the list)
+        if target - i in lst and i != (target-i):             #1 (subtracts i from target to find other number that adds up to target and makes sure i is not equal to target-i
+            num_set.add((i, (target - i)))                    #1 (adds tuple to set)
+            lst.remove(i)                                     #1 (removes i from list to prevent duplicates)
+    return num_set                                            #1
+                                                              #-----------------
+                                                              # n + 2 = O(n)
 
     #find_pairs_optimized is O(n) due to the use of a single for loop that iterates through the list once, which is n thus making it linear. Compared to the naive function, which iterates twice using two for loops, the optimized function is much faster.
 

@@ -12,7 +12,10 @@ class TestFindPairs(unittest.TestCase):
 
     def test_find_pairs_optimized(self):
         """Tests the find_pairs_optimized function"""
-        self.assertSetEqual(find_pairs_optimized([1, 2, 3, 4, 5], 5), {(1, 4), (3, 2)})
+        self.assertSetEqual(find_pairs_optimized([1, 2, 3, 4, 5, 6, 7], 8), {(1, 7), (3, 5), (6, 2)})
+        self.assertSetEqual(find_pairs_optimized([1, 2, 3, 4, 5, 6], 8), {(2, 6), (5, 3)})
+        self.assertSetEqual(find_pairs_optimized([1, 2, 3, 4, 5], 0), set())
+        self.assertSetEqual(find_pairs_optimized([1, 2, 3, 4, 5, 6], 12), set())
         self.assertSetEqual(find_pairs_optimized([], 5), set())
 
     def test_measure_min_time(self):
