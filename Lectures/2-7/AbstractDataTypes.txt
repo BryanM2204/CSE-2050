@@ -1,0 +1,34 @@
+Abstract Data Types (ADT)
+    -encapsulation 
+    -All we care about is the public inferface 
+    -Ex.
+        1. Stack (push and pop)
+            -push('a')
+            -push('b')
+            -push('c')
+            -pop() = should call on c = LiFo (last in, first out)
+        
+        2. Queue
+            -enqueue
+                -adds end to list
+            -dequeue
+                -removes from front of list
+
+            >enq(a)
+            >enq(b)
+            >enq(c)
+            >deq() = should return 'a'
+
+            -FIFO - first in, first out
+
+        3. Deque
+            -double-ended Queue
+            -add_first
+            -add_last
+            -remove_first
+            -remove_last
+
+Custom Data class
+    -Linked list
+        -node = stores some item that points to the next node
+        -Linked list keeps track of the head and tail
