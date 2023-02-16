@@ -1,0 +1,51 @@
+Immutatble - strings and tuples
+
+Tuples are immutable, so they can go in sets - mayeb a set of 2-d coordinates (x,y)
+
+encapsulation - comines the instance vairables and methods of an object into a single class
+    - also: hiding what is happening under the hood
+
+Users are able to access private variables because private variables don't exist in python
+
+all classes in python are subclasses to object
+
+we are most likely to inotrduce composition in the __init__ methods
+
+Question: Name and describe the three phases of test-driven development
+Red - write a test and run it to verify that it fails and it fails for the reason we expect
+Green - modify code to pass test classes
+Refactor - factor out any dyplicate code to keep our code DRY
+
+Big-O notation gives an upper bound - there is an upper bound that runs worse than our code 
+    -Ex. - function runs 5n+1 = O(n) - there is some linear function that is slower (6n+1)
+        - n(naugt) is where crossover happens in which the other function is worse (intersection)
+
+nested for loops that depend on the list - not quadratic
+
+Wrapper pattern is:
+    -Wrapper patterns use an exisitng data structure to implement a public interface
+    -Benefits = use previous function with "standard" interface
+    -Allows me to limit functionallity to what the inerface defines
+        -ex. - self._L = [] in a stack class - the list is only used for the functionality of a stack and not for list - rebranded
+    -Make a stack w/ a linked list
+    -Make a stack w/ a DLL
+
+Stack vs. queue
+    -Stack is LIFO - last in first out
+    -Qeueu is FIFO - first in first out
+
+linked list vs. DLL
+    -Linked list can only be traversed forwards - this makes finding nodes near the end very slow
+    -DLL has next and prev pointers so it can be traversed both ways
+    -DLL uses ~3 attributes per object
+        -50% more memory used than a linked list
+    -LL stores 2 attributes per object
+
+raise TypeError('wrong Type!')
+
+Linked list used to make a queue
+    -Remove first and add last are both O(1) in a linked list
+
+Time complexity of finding hte min element in a sorted list is O(1)
+
+

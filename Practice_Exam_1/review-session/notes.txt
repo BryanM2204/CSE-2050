@@ -1,0 +1,18 @@
+Wrapper Pattern
+    -Hides everything under the hood for easy use by the user
+
+Linked Lists
+    -Sequence of nodes 
+    -pointer refers to other node - node contains data and the address to the next node
+    -Queue w/ linked Lists
+        -waiting linked
+        -FIFO - first in first out
+        -Enqueue - adds last
+        -Dequeue - removes first
+    -Deques 
+    -Stack 
+        -stack of plates - you have this tower = you can't remove middle plate 
+        -you can only remove from the top (ex. - from the end of the linked list)
+    -Lazy updating
+        -insetad of removing last item
+
