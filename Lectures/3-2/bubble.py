@@ -8,9 +8,9 @@ def bubble(L):
     for i in range(n-1):
         keep_going = False
         for j in range(n-1-i):
-            if L[i] > L[j+1]:
+            if L[j] > L[j+1]: # if two items are out of order
                 keep_going = True
-                L[j+1], L[i] = L[j], L[j+1]
+                L[j+1], L[j] = L[j], L[j+1] #switch them 
 
         if not keep_going: break
 
