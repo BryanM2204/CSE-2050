@@ -1,0 +1,5 @@
+Amortized analysis
+    - removing n items from a list
+        constraint: 1/2(len(L)) < n < len(L)
+
+    

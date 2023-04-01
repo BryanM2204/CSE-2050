@@ -1,0 +1,16 @@
+Mapping ADT
+    - foundational operations
+        put(key, value)
+            add key:value pair
+
+        get(key)
+            return value
+
+    - Keys must be unique
+
+Hashing
+    - store keys in n-item array
+    - put: use hash function to locate index of object
+    - seperate chaining - hash may lead to multiple values having same index
+        - so make a list full of empty list - handle hashing collisions
+        

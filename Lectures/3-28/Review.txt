@@ -1,0 +1,59 @@
+Memoization:
+    - To avoid solving the same subproblem multiple times 
+    - Not tied to recursion
+
+With binary search 
+    - to make it O(logn) - must pass left and right in parameters
+    - O(n) if it splices
+
+Selection sort - does very few writes in large lists 
+    - at most O(n) write operations
+    - only use quadratic algorithms when almost sorted 
+        - or when you go to small lists
+    - selection sort never really used - would use mergesort for big lists
+
+insertion sort 
+    - can point it out if the biggest and smallest nums go into place in the last recursion loop
+
+selection sort
+    - does small writes but lots of comparisons even if it is sorted
+    - finds the biggest item and moves it to the end
+
+Time Complexities
+    - mergesort 
+        - best: O(nlogn)
+        - Average: O(nlogn)
+        - Worst: O(nlogn)
+        - writes are 2n while comparisons are n
+            - Every level - 3n operations but because we split in half, we get logn - so total running time is 3nlog_2(n)
+
+    - quicksort
+        - best: O(nlogn)
+        - Average: O(nlogn)
+        - Worst: O(n^2) - bad pivot
+        - total running time - 2nlogn
+            - requires n writes + n comparisons
+
+    - quickselect
+        - best: O(n)
+        - Average: O(n)
+        - Worst: O(n^2)
+        - The median value as pivot value gives optimal results
+
+    - Bubble sort (adaptive)
+        - best: O(n)
+        - Average: O(n^2)
+        - Worst: O(n^2)
+
+    - Selection sort (not adaptive)
+        - best: O(n^2) 
+        - Average: O(n^2)
+        - Worst: O(n^2)
+        - best for average and worst cases - always at most O(n) writes
+
+    - insertion sort 
+        - best: O(n)
+        - Average: O(n^2)
+        - Worst: O(n^2)
+
+- Hash collision = two different keys having the same hash value
