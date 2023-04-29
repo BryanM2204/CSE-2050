@@ -1,0 +1,38 @@
+Final Exam
+
+Mod 9 
+    - BST 
+        - up to two children - ordering of left to right 
+        - search O(logn)
+        - put O(logn)
+        - remove O(logn)
+
+Mod 10 
+    - binary min-heap
+        - search for O(n)
+        - put for O(logn)
+        - remove_min for O(logn)
+        - it is worse than a binary search tree - but a binary search tree is a linked data structure 
+        - with a heap - we just store in array = takes up way less memory 
+    - priority queues
+
+Mod 11 / Mod 11 Pt. 2
+    - Graphs (Review Vocabs for exam!)
+        - Unidrected - directed
+        - weighted - unweighted
+        - ADT
+        - Traversal algorithms
+            - DFS - Traversal with a stack - pop the most recent one 
+                - recursive implementation - but it is slow - takes up memory 
+                - LIFO does not guarantee for deepest path
+                - Some graphs are very expensive to explore - so DFS is used as you can't always explore every possibility
+                    - Ex. = chess  = has too many possibility
+                    - gets you to edge of graph quickly
+
+            - BFS 
+                - uses queue
+                - optimizes for minimum number of edges
+                - if it is possible to get to somehwere with minimum of 2 steps - BFS will find it 
+        - Weighted graphs
+            - Dijkstra = uses prioerity queues
+            - Prim - uses priority queues

@@ -1,0 +1,15 @@
+transverse(start):
+    # initilaize 
+    1) Initialize epmptry collections to_visit and tree
+    2.) Add (start, None) to to_visit
+
+    # transverse
+    3) Until to_visit is empty:
+        3.a) chd, par = to_visit.remove()
+        3.b) add chd:par to tree
+        3.c) add chd's nbrs to to_visit
+    
+    # return
+
+DFs - stack
+BFS - fifo order - queue

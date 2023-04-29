@@ -1,0 +1,65 @@
+Q1 
+    - __next__ is expected to raise a StopIteration error to terminate a for loop
+
+
+Q2
+    - post-order = 
+        yield self.data is at the end so "post" everything else
+        ex. -
+            yield from self.left
+            yield from self.right
+            yield self
+
+    - pre-order - root is printed out first "yield self.item" comes first before other yields
+        ex. - 
+            yield self
+            yield from self.left
+            yield from self.right
+
+    - in-order 
+        yield from self.left
+        yield self
+        yield self.right
+        This traversal type prints the values in the nodes in sorted order 
+
+
+Q14
+    - Binary max-heap
+        - goes from big to small - check roots and children - children must be smaller
+
+
+Q17
+    - simple graphs don't self loop nor has multiple edges
+
+Q21
+    - O(E) 
+
+- prim only works with undirected graphs
+    - has unique behavior:
+        ex. - if you have any number of verticies and all edges are unique = the minumum edge from every vertex is in must
+    - PQ based on minimum edge to add vertex
+    - creates minimum spanning Treesmallest ege from each vertex is in the MST
+- Dijkstra
+    - PQ based on minimum distance from source
+    - same as BFS if all weights are the same 
+    - Directed or undirected grpahs 
+    - Tree is not unique
+
+Running Times
+    - Put
+        - Heap = log(n)
+        - BST = logn
+    - Remove_min
+        - heap = logn
+        - BST = logn
+    - contains
+        - heap = O(n) [O(1) with dictionary]
+        - BST = logn
+    - floor / ceiling 
+        - heap = O(n)
+        - BST = logn
+    - peak
+        - heap = O(1)
+        - BST = logn
+
+

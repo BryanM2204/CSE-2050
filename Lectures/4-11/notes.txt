@@ -1,0 +1,5 @@
+Priority Queues 
+
+il = 2k + 1
+ir = 2k + 2
+ip = (k-1) // 2
